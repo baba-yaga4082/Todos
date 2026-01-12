@@ -1,0 +1,96 @@
+.update-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.update-container {
+  background-color: #f5e6d3;
+  padding: 40px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+}
+
+.update-heading {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.update-input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.update-textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.update-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.btn-update {
+  padding: 12px 30px;
+  background-color: #cd1111;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn-update:hover {
+  background-color: #555;
+}
+
+.update-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 50px;
+  height: 32px;
+  border-radius: 20%;
+  border: none;
+  background-color: red;
+  color: #704141;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+}
+
+.update-close-btn:hover {
+  background-color: rgb(224, 7, 7);
+  color: #c5c5c5;
+  transform: scale(1.05);
+}

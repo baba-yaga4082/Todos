@@ -1,0 +1,114 @@
+.view-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.view-container {
+  background-color: #f5e6d3;
+  padding: 40px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+}
+
+.view-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 50px;
+  height: 32px;
+  border-radius: 20%;
+  border: none;
+  background-color: red;
+  color: #704141;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+}
+
+.view-close-btn:hover {
+  background-color: rgb(224, 7, 7);
+  color: #c5c5c5;
+  transform: scale(1.05);
+}
+
+.view-heading {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.view-content {
+  margin-bottom: 30px;
+}
+
+.view-field {
+  margin-bottom: 25px;
+}
+
+.view-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.view-text {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+  min-height: 40px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.view-body {
+  min-height: 150px;
+  max-height: 400px;
+  overflow-y: auto;
+  line-height: 1.6;
+}
+
+.view-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.btn-close-view {
+  padding: 12px 30px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.btn-close-view:hover {
+  background-color: #5a6268;
+}
+
